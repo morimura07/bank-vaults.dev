@@ -1,0 +1,12 @@
+
+/**
+ * Ionic overrides
+ */
+.bar-header{
+	background:#FAFAFA;
+	color:#FFF;
+}
+
+.bar-header h1{
+	color:#333;
+}
