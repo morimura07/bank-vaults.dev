@@ -1,0 +1,17 @@
+<ion-view title="Newsfeed" ng-controller="NewsfeedCtrl">
+	<ion-nav-buttons side="right">
+		<button class="button button-clear icon ion-compose" href="#/tab/newsfeed/compose"></button>
+	</ion-nav-buttons>
+
+	<ion-content>
+
+		<ion-list>
+
+			<ion-item ng-repeat="activity in newsfeedItems" type="item-text-wrap" href="#/tab/newsfeed/{{activity.guid}}">
+				<activity-view></activity-view>
+			</ion-item>
+
+		</ion-list>
+
+	</ion-content>
+</ion-view>
