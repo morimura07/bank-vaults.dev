@@ -15,7 +15,7 @@ define(function () {
      	$scope.guid = $stateParams.guid;
      	
      	
-     	$scope.inprogress = true;
+     	$scope.inprogress = false;
      	$scope.loadMore = function(){
      		if($scope.inprogress)
      			return false;
