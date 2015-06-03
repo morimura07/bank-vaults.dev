@@ -95,8 +95,8 @@ extern "C" {
 
 #if !(defined(VMS) || defined(__VMS)) /* VMS uses logical names instead */
 #if defined(HEADER_CRYPTLIB_H) && !defined(OPENSSLDIR)
-#define ENGINESDIR "/wwwroot/OpenSSL-for-iPhone/bin/iPhoneSimulator8.1-i386.sdk/lib/engines"
-#define OPENSSLDIR "/wwwroot/OpenSSL-for-iPhone/bin/iPhoneSimulator8.1-i386.sdk"
+#define ENGINESDIR "/tmp/openssl-1.0.1m-iOS-i386/lib/engines"
+#define OPENSSLDIR "/tmp/openssl-1.0.1m-iOS-i386"
 #endif
 #endif
 
