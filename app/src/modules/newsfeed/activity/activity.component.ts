@@ -24,7 +24,13 @@ export class Activity {
   }
 
   @Input('entity') set _entity(entity){
-    this.entity = entity;
+
+    if(entity.remind_object){
+      this.entity = entity.remind_object;
+      this.entity.remind_object = false; //stop remind looping, if it even happens
+    } else {
+      this.entity = entity;
+    }
     this.cache.set('channel:' + entity.ownerObj.guid, entity.ownerObj, false);
   }
 
