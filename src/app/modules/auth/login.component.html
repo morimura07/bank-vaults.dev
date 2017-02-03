@@ -1,22 +1,25 @@
 
-<div class="m-ionic-login--header login-header">
+<div class="m-ionic-login">
    <div class="m-ionic-login--bg"></div>
    <img src="assets/full_logo_white.png" class="m-ionic-login--logo"/>
-</div>
 
-  <ion-list>
-    <ion-item>
-      <ion-input #username type="text" placeholder="Username"></ion-input>
-    </ion-item>
 
-    <ion-item>
-      <ion-input #password type="password" placeholder="Password"></ion-input>
-    </ion-item>
+  <div class="m-ionic-login--fields">
+    <div class="m-ionic-login--field">
+      <input #username type="text" placeholder="Username"/>
+    </div>
 
-    <ion-item>
+    <div class="m-ionic-login--field">
+      <input #password type="password" placeholder="Password"/>
+    </div>
+
+    <div class="m-ionic-login--field">
+      <button ion-button value="Login" (click)="register()"> Create a Channel </button>
       <button ion-button value="Login" (click)="login(username, password, $event)"> Login </button>
-    </ion-item>
-  </ion-list>
+    </div>
+  </div>
+
+</div>
 
   <!--<div class="padding">
 

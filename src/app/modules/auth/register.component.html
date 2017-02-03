@@ -1,0 +1,35 @@
+
+<div class="m-ionic-login">
+   <div class="m-ionic-login--bg"></div>
+   <img src="assets/full_logo_white.png" class="m-ionic-login--logo"/>
+
+
+  <div class="m-ionic-login--fields">
+    <div class="m-ionic-login--field">
+      <input #username type="text" placeholder="Username"/>
+    </div>
+
+    <div class="m-ionic-login--field">
+      <input #email type="text" placeholder="Email"/>
+    </div>
+
+    <div class="m-ionic-login--field">
+      <input #password type="password" placeholder="Password"/>
+    </div>
+
+    <div class="m-ionic-login--field">
+      <button ion-button (click)="nav.pop()"> Go back </button>
+      <button ion-button (click)="register(username, email, password, $event)"> Register </button>
+    </div>
+  </div>
+
+</div>
+
+  <!--<div class="padding">
+
+    <div class="login-options">
+        <a href="#/register">Don't have a channel? Signup.</a>
+        <a href="#/forgotpassword">Forgot password</a>
+    </div>
+
+  </div>-->
