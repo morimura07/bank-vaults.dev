@@ -5,7 +5,9 @@ import { CacheService } from '../../common/services/cache/cache.service';
 import { Storage } from '../../common/services/storage';
 
 import { WalletService } from './wallet.service';
+import { WalletHistoryComponent } from './history.component';
 import { PurchaseComponent } from './purchase.component';
+import { BoostReviewComponent } from '../boost/boost.component';
 
 import { CONFIG } from '../../config';
 
@@ -13,9 +15,7 @@ import { CONFIG } from '../../config';
   moduleId: 'module.id',
   selector: 'wallet',
   templateUrl: 'wallet.component.html',
-  //styleUrls: ['activity.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
-  ////styleUrls: ['activity.component.css']
 })
 
 export class WalletComponent {
@@ -24,8 +24,10 @@ export class WalletComponent {
     cdn_url: CONFIG.cdnUrl
   }
 
-  components : {
-    purchase : PurchaseComponent
+  components = {
+    history: WalletHistoryComponent,
+    purchase : PurchaseComponent,
+    boost: BoostReviewComponent
   }
 
   inProgress : boolean = false;
